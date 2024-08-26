@@ -91,3 +91,6 @@ as avg_price
 
 31) Для классов кораблей, калибр орудий которых не менее 16 дюймов, укажите класс и страну.
 Select class, country from classes where bore >= 16
+
+33) Укажите корабли, потопленные в сражениях в Северной Атлантике (North Atlantic). Вывод: ship.
+select ship from outcomes right join battles on outcomes.battle=battles.name where result='sunk' and name='North Atlantic'
